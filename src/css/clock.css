@@ -1,0 +1,60 @@
+.calendar {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 33px;
+  padding: 0 10px;
+  padding-top: 10px;
+}
+.hour {
+  flex: 1;
+  font-size: 5rem;
+  margin: 0;
+  padding: 0;
+  top: 0;
+}
+.ampm {
+  align-self: flex-end;
+  font-size: 2.5rem;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+.digital {
+  display: inline-block;
+  position: relative;
+  font-family: 'Digital-7';
+}
+.digital :first-child {
+  width: 100%;
+  position: absolute;
+  color: #242a32;
+}
+.digital :last-child {
+  position: relative;
+  color: #ebebeb;
+}
+.digital p {
+  margin: 0;
+}
+
+@media (max-width: 770px) {
+  .calendar,
+  .ampm {
+    font-size: 0.7rem;
+  }
+
+  .hour {
+    font-size: 4rem;
+  }
+
+  .clock {
+    padding: 5px;
+  }
+
+  .countdown {
+    font-size: 4rem;
+  }
+}
